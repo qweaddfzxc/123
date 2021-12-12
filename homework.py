@@ -14,7 +14,7 @@ if user1 == computer:
         st.write("隨機生成數字為：2");
     st.write("啊哈，是平局！");
 user1 = st.button('輸入確認')
-elif user1 == 0 and computer == 1:
+if user1 == 0 and computer == 1:
     st.write("你的輸入為：剪刀（0）");
     rd.write("隨機生成數字為：1");
     st.write(("哈哈，你輸了"));
