@@ -1,6 +1,6 @@
 import streamlit as st
 import random as rd
-dict(1:'剪子',2:'石頭',3:'布')
+st.dict(1:'剪子',2:'石頭',3:'布')
 computer = random.randint(0,2)
 user1 = st.button('輸入確認')
 if user1 == computer:
