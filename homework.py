@@ -1,8 +1,8 @@
 import streamlit as st
 user1 = st.number_input("請輸入：剪刀：（0）、石頭（1）、布（2）")
 user1 = st.button('輸入確認')
-import random as rd
-computer = rd.randint(0,2,1)
+import random 
+computer = random.randint(0,2,1)
 if user1 == computer:
     if user1==0:
         st.write("你的輸入為：剪刀（0）")
