@@ -38,4 +38,4 @@ if confirm_input:
     elif user1 == 2 and computer == 1:
         st.write("你的輸入為：布（2）");
         st.write("隨機生成數字為：1");
-        st.write(("恭喜你贏啦")
+        st.write("恭喜你贏啦")
