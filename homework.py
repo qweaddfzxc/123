@@ -1,40 +1,30 @@
 import streamlit as st
-user1 = st.int_input("請輸入：剪刀：（0）、石頭（1）、布（2）")
+you = streamlit_simulation("請輸入剪刀0，石頭1，布2:")
 import random 
-computer = random.randint(0,2)
-if user1 == computer:
-    if user1==0:
-        st.write("你的輸入為：剪刀（0）")
-        st.write("隨機生成數字為：0")
-    elif user1==1:
-        st.write("你的輸入為：石頭（1）");
-        st.write("隨機生成數字為：1");
+cp = random.randint(0,2)##生成範圍是0到2的亂數
+
+if(you > 2 or you < 0):
+    st.write("沒有這種出法哦")##玩家不能輸入0到2範圍以外的數位
+else:
+ st.write("電腦出的是 %d\n " % cp)
+ if(you == 0):
+    if(cp ==  0):
+        st.write("平局，請再出一次")
+    elif(cp ==  1):
+        st.write("你輸了")
     else:
-        st.write("你的輸入為：布（2）");
-        st.write("隨機生成數字為：2");
-    st.write("啊哈，是平局！");
-elif user1 == 0 and computer == 1:
-    st.write("你的輸入為：剪刀（0）");
-    rd.write("隨機生成數字為：1");
-    st.write(("哈哈，你輸了"));
-elif user1 == 0 and computer == 2:
-    st.write("你的輸入為：剪刀（0）");
-    rd.write("隨機生成數字為：2");
-    st.write(("恭喜你贏啦！"));
-elif user1 == 1 and computer == 0:
-    st.write("你的輸入為：石頭（1）");
-    rd.write("隨機生成數字為：0");
-    st.write(("恭喜你贏啦！"));
-elif user1 == 1 and computer == 2:
-    st.write("你的輸入為：石頭（1）");
-    rd.write("隨機生成數字為：2");
-    st.write(("哈哈，你輸了"));
-elif user1 == 2 and computer == 0:
-    st.write("你的輸入為：布（2）");
-    rd.write("隨機生成數字為：0");
-    st.write(("哈哈，你輸了"));
-elif user1 == 2 and computer == 1:
-    st.write("你的輸入為：布（2）");
-    rd.write("隨機生成數字為：1");
-    st.write(("恭喜你贏啦"));
-user1 = st.button('輸入確認')
+        st.write("你贏了")
+ if(you == 1):
+    if(cp == 1):
+        st.write("平局，請再出一次")
+    elif(cp == 2):
+        st.write("你輸了")
+    else:
+        st.write("你贏了")
+ if(you == 2):
+    if(cp == 2):
+         st.write("平局，請再出一次")
+    elif(cp == 0):
+        st.write("你輸了")
+    else:
+        st.write("你贏了")
