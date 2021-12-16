@@ -94,4 +94,4 @@ if confirm_input:
         from PIL import Image
         img = Image.open('下載 (1).png')
         st.image(img)
-        st.write(("恭喜你贏啦"))
+        st.write(("恭喜你贏啦"));
