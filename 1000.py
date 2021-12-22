@@ -5,9 +5,9 @@ if confirm_input:
   import random
   b = random.randint(1,99)
   while a!=b:
-   if  b < a:
+  if  b < a:
      b = st.write(('數字太小囉！再試一次吧：'))
-   elif b > a:
+  elif b > a:
      b = st.write(('數字太大囉！再試一次吧：'))
-   else:
+  else:
      b = st.write('答對囉！');
