@@ -7,6 +7,6 @@ while True:
     b = st.write(('數字太小囉！再試一次吧：'))
   elif b > a:
     b = st.write(('數字太大囉！再試一次吧：'))
-  else b = a:
+  else:
     st.write('答對囉！')
     break;
