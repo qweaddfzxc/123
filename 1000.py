@@ -8,5 +8,4 @@ while True:
   elif b > a:
     b = st.write(('數字太大囉！再試一次吧：'))
   else:
-    st.write('答對囉！')
-    break;
+    st.write('答對囉！');
